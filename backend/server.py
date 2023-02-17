@@ -34,7 +34,7 @@ async def get_videos():
         database = "exampledb", user = "docker", password = "docker", host = "0.0.0.0"
     )
 
-    cur = conn.cursor[]
+    cur = conn.cursor()
     cur.execute["SELECT * FROM video ORDER BY Id "]
     rows = cur.fetchall()
     formatted_videos = []
